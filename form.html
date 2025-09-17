@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post">
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="UserName"/>
+    </div>
+    <br>
+     <div>
+        <label for="pnum">Number:</label>
+        <input type="tel" id="pnum" name="phoneNumber"/>
+    </div>
+    <br>
+     <div>
+        <label for="E-Mil">Mail:</label>
+        <input type="email" id="E-Mil" name="E-Mail Id"/>
+    </div>
+    <br>
+     <div>
+        <label for="PassWord">PassWord:</label>
+        <input type="password" id="PassWord" name="UserPassWord"/>
+    </div>
+    <br>
+     <div>
+        <label for="Resume">Resume/CV:</label>
+        <input type="file" id="Resume" name="ResumeFile"/>
+    </div>
+    <br>
+
+
+        <div>
+        <label for="LinkedIn">LinkedIn Profile:</label>
+        <input type="url" id="LinkedIn" name=LinkedIn"/>
+        </div>
+        <br>
+
+        <div>
+        <label for="Condition">Condition Apply:</label>
+        <input type="checkbox" id="condition" name=Accept Condition"/>
+        </div>
+        <br>
+
+        <div>
+        <label for="Srh">Search:</label>
+        <input type="search" id="Srh" name=Search"/>
+        </div>
+        <br>
+
+        <div>
+        <label for="Hide">Hide:</label>
+        <input type="hidden" id="Hide" name=HiddenContent"/>
+        </div>
+        <br>
+
+        <div>
+        <label for="Load">Reload:</label>
+        <input type="{% load  %}" id="Load" name=Reload"/>
+        </div>
+        <br>
+
+        <div>
+        <label for="Color">Change Color:</label>
+        <input type="color" id="Color" name=color"/>
+        </div>
+        <br>
+
+        <div>
+        <label for="Click">Click Me:</label>
+        <input type="button" id="Click" name=ClickMe"/>
+        </div>
+        <br>
+
+        <div>
+        <label for="Filter">Filter:</label>
+        <input type="
+        {% filter  %}
+            
+        {% endfilter %}
+        " id="Filter" name= Filter"/>
+        </div>
+        <br>
+
+        <div>
+        <label for="Auto">Escape:</label>
+        <input type="
+        {% autoescape off %}
+            
+        {% endautoescape %}
+        " id="Auto" name=Escape"/>
+        </div>
+        <br>
+
+        <div>
+        <label for="str">Select Streams:</label>
+        <select name="Streams" id="str">
+            <option value="CS">CS</option>
+            <option value="Chemisrtry">Chemistry</option>
+            <option value="Physics">Physics</option>
+            <option value="Maths">Maths</option>
+            </option>
+            </select>
+        </div>
+        <br>
+
+        <div>
+            <label for="Another Payment method"></label>
+
+        <input type="radio" name="PaymentMethod" value="Credit or Debit card" id="card">
+        <label for="card">Credit or Debit card</label><br>
+
+         <input type="radio" name="PaymentMethod" value="Net Banking" id="Net">
+        <label for="Net">Net Banking</label><br>
+
+        <input type="radio" name="PaymentMethod" value="Other UPI Apps" id="Upi">
+        <label for="Upi">Other UPI Apps</label><br>
+
+        <input type="radio" name="PaymentMethod" value="Cash on Delivery" id="Cod">
+        <label for="Cod"">Cash on Delivery</label><br>
+
+        </div>
+
+        <div>
+            <label for="">Selected Courses</label><br>
+
+            <input type="checkbox" name="course1" value="Java" id="java">
+            <label for="java">Java</label><br>
+
+            <input type="checkbox" name="course2" value="Mysql" id="mysql">
+            <label for="mysql">MySQL</label><br>
+
+            <input type="checkbox" name="course3" value="Web" id="web">
+            <label for="web">Web</label><br>
+
+            <input type="checkbox" name="course4" value="Python" id="python">
+            <label for="python">Python</label><br>
+
+        </div>
+        
+        <input type="submit" />
+        <input type="reset"/>
+        
+    </form>
+
+</body>
+</html>

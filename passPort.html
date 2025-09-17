@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Passport Seva - User Registration</title>
+</head>
+<body>
+
+  <table>
+    <tr>
+      <td>
+        <img src="national-emblem-front.png" alt="National Emblem" height="100">
+      </td>
+      <td>
+        <h2>Passport Seva</h2>
+        <h3>PSP Division</h3>
+        <h4>Ministry of External Affairs, Government of India</h4>
+      </td>
+    </tr>
+  </table>
+
+  <h3>User Registration</h3>
+  <p>Fields marked with asterisk (*) are mandatory</p>
+  <p><b>Important Information:</b> Passport application can be processed at any PSK/POPSK/PSLK WITHIN INDIA irrespective of your residential address.</p>
+  <p><a href="#">Click here</a> to check the appointment availability at all PSK/POPSK/PSLK.</p>
+  <p><a href="#">Click here</a> to know more about Apply Anywhere in India scheme for Passport Services.</p>
+
+  <form>
+    <label for="passportOffice">Passport Office* (As per Present Residential Address)</label><br>
+    <select id="passportOffice" name="passportOffice">
+      <option>----- Select -----</option>
+      <option>Kundapura</option>
+      <option>Udupi</option>
+      <option>Mangaluru</option>
+      <option>Mysuru</option>
+      <option>Sagar</option>
+      <option>Shivamogga</option>
+      <option>Dharwad</option>
+      <option>Mumbai</option>
+      <option>Delhi</option>
+      <option>Bengaluru</option>
+      <option>Hubli</option>
+    </select>
+    <br><br>
+
+    <label for="givenName">Given Name* (Max 45 Characters)</label><br>
+    <input type="text" id="givenName" name="givenName" maxlength="45"><br><br>
+
+    <label for="surname">Surname (Max 45 Characters)</label><br>
+    <input type="text" id="surname" name="surname" maxlength="45"><br><br>
+
+    <label for="dob">Date of Birth (DD/MM/YYYY)*</label><br>
+    <input type="text" id="dob" name="dob" placeholder="DD/MM/YYYY"><br><br>
+
+    <label for="email">E-mail Id* (Max 35 Characters)</label><br>
+    <input type="email" id="email" name="email" maxlength="35"><br><br>
+
+    <p>Are you 18 years old?*</p>
+    <input type="radio" id="ageYes" name="age18" value="yes"> Yes
+    <input type="radio" id="ageNo" name="age18" value="no"> No
+    <br><br>
+
+    <label for="loginId">Login Id*</label><br>
+    <input type="text" id="loginId" name="loginId"><br><br>
+
+    <label for="password">Password*</label><br>
+    <input type="password" id="password" name="password"><br><br>
+
+    <label for="confirmPassword">Confirm Password*</label><br>
+    <input type="password" id="confirmPassword" name="confirmPassword"><br><br>
+
+    <label for="hintQuestion">Hint Question*</label><br>
+    <select id="hintQuestion" name="hintQuestion">
+      <option>----- Select -----</option>
+      <option>What was your childhood nickname?</option>
+      <option>What is your favorite local dish?</option>
+      <option>Name of your first best friend?</option>
+    </select>
+    <br><br>
+
+    <label for="hintAnswer">Hint Answer*</label><br>
+    <input type="text" id="hintAnswer" name="hintAnswer"><br><br>
+
+    <button type="submit">Register</button>
+    <button type="reset">Clear</button>
+  </form>
+
+</body>
+</html>
